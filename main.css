@@ -45,28 +45,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  text-decoration: none; }
+
+footer {
+  background: #727272;
+  padding: 1em 0;
+  text-align: center; }
+
+/* ================================= 
+  Navigations Styles
+==================================== */
+header {
+  background: #3F51B5; }
+
 h1 {
   font-size: 1.75em;
-  color: blue;
-  margin: 0; }
+  margin: 0;
+  background: #303F9F; }
+  h1 a {
+    color: #fff; }
 
 nav li {
   list-style: none; }
   nav li a {
     font-size: 1.125em;
-    padding: 0.25em 1em; }
-
-a {
-  text-decoration: none; }
+    padding: 0.25em 1em;
+    color: #fff; }
 
 .main-nav a,
 .logo a {
   display: block;
-  text-align: center; }
-
-footer {
-  background: #d9e4ea;
-  padding: 1em 0;
   text-align: center; }
 
 /* ================================= 

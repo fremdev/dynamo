@@ -1,32 +1,44 @@
 @import "_reset.scss";
-
-h1 {
-	font-size: 1.75em;
-	color: blue;
-	margin: 0;
-}
-
-nav li {
-	list-style: none;
-	& a {
-		font-size: 1.125em;
-		padding: 0.25em 1em;
-	}
-}
+@import "_variables.scss";
 
 a {
 	text-decoration: none;
 }
 
-.main-nav a,
-.logo a {
-	display: block;
+footer {
+	background: $footer-color;
+	padding: 1em 0;
 	text-align: center;
 }
 
-footer {
-	background: #d9e4ea;
-	padding: 1em 0;
+/* ================================= 
+  Navigations Styles
+==================================== */
+header {
+	background: $header-color;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin: 0;
+	background: $logo-color;
+	a {
+		color: $menu-color;
+	}
+}
+
+nav li {
+	list-style: none;
+	a {
+		font-size: 1.125em;
+		padding: 0.25em 1em;
+		color: $menu-color;
+	}
+}
+
+.main-nav a,
+.logo a {
+	display: block;
 	text-align: center;
 }
 
