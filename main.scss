@@ -54,7 +54,8 @@ nav li {
 }
 
 .club {
-	max-height: 200px;
+	min-width: 100px; 
+	max-height: 250px;
 }
 
 .dynamo {
@@ -100,12 +101,22 @@ footer {
 
 .announce {
 	display: flex;
-	flex-direction: column;
-	flex: 4;
+	// flex-direction: column;
+	flex: 0;
 }
 
 .club {
-	flex: 2 150px;
+	flex: 2;
+	min-width: 75px;
+	min-height: 200px;
+}
+
+.versus {
+	flex: 1;
+	min-width: 50px;
+	align-self: center;
+	font-size: 3em;
+	text-align: center;
 }
 
 .banner {
@@ -114,7 +125,7 @@ footer {
 }
 
 .match-info {
-	flex: 0;
+	flex: 1;
 }
 
 
