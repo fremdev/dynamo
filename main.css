@@ -61,6 +61,25 @@ a {
   display: block;
   text-align: center; }
 
+footer {
+  background: #d9e4ea;
+  padding: 1em 0;
+  text-align: center; }
+
+/* ================================= 
+  Photo Styles
+==================================== */
+.club {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.dynamo {
+  background-image: url("images/dynamo.png"); }
+
+.mancity {
+  background-image: url("images/mc.png"); }
+
 /* ================================= 
   Flexbox Styles
 ==================================== */
@@ -71,5 +90,13 @@ body {
 
 footer {
   margin-top: auto; }
+
+.announce {
+  display: flex;
+  min-height: 30vh;
+  flex-wrap: wrap; }
+
+.club {
+  flex: 100%; }
 
 /*# sourceMappingURL=main.css.map */
