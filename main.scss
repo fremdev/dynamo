@@ -45,9 +45,15 @@ footer {
 	background-image: url("images/mc.png");
 }
 
+.banner {
+	background-image: url("images/nsk.jpg");
+}
+
 /* ================================= 
   Flexbox Styles
 ==================================== */
+
+// Main flexbox container
 
 body {
 	display: flex;
@@ -55,21 +61,34 @@ body {
 	min-height: 100vh;
 }
 
-footer {
-	margin-top: auto;
+body > * {
+	flex: 1;
 }
+
+header,
+footer {
+	flex: 0;
+}
+
+// Announce flexbox container
 
 .announce {
 	display: flex;
 	flex-direction: column;
-}
-.announce > div {
-	flex: 1 200px;;
+	flex: 4;
 }
 
-body > * {
-	flex: 1;
+.club {
+	flex: 2 150px;
 }
+
+.match-info {
+	flex: 0;
+}
+
+
+
+
 
 // header,
 // nav {

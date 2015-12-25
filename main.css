@@ -80,6 +80,9 @@ footer {
 .mancity {
   background-image: url("images/mc.png"); }
 
+.banner {
+  background-image: url("images/nsk.jpg"); }
+
 /* ================================= 
   Flexbox Styles
 ==================================== */
@@ -88,17 +91,22 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+body > * {
+  flex: 1; }
+
+header,
 footer {
-  margin-top: auto; }
+  flex: 0; }
 
 .announce {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex: 4; }
 
-.announce > div {
-  flex: 1 200px; }
+.club {
+  flex: 2 150px; }
 
-body > * {
-  flex: 1; }
+.match-info {
+  flex: 0; }
 
 /*# sourceMappingURL=main.css.map */
