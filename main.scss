@@ -1,13 +1,17 @@
 @import "_reset.scss";
 
 h1 {
-	font-size: 24px;
+	font-size: 1.75em;
 	color: blue;
 	margin: 0;
 }
 
 nav li {
 	list-style: none;
+	& a {
+		font-size: 1.125em;
+		padding: 0.25em 1em;
+	}
 }
 
 a {
@@ -76,6 +80,10 @@ footer {
 	flex: 0;
 }
 
+footer {
+	order: 100;
+}
+
 // Announce flexbox container
 
 .announce {
@@ -95,10 +103,6 @@ footer {
 
 .match-info {
 	flex: 0;
-}
-
-footer {
-	order: 100;
 }
 
 

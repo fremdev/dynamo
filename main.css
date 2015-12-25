@@ -46,12 +46,15 @@ table {
   border-spacing: 0; }
 
 h1 {
-  font-size: 24px;
+  font-size: 1.75em;
   color: blue;
   margin: 0; }
 
 nav li {
   list-style: none; }
+  nav li a {
+    font-size: 1.125em;
+    padding: 0.25em 1em; }
 
 a {
   text-decoration: none; }
@@ -104,6 +107,9 @@ header,
 footer {
   flex: 0; }
 
+footer {
+  order: 100; }
+
 .announce {
   display: flex;
   flex-direction: column;
@@ -118,8 +124,5 @@ footer {
 
 .match-info {
   flex: 0; }
-
-footer {
-  order: 100; }
 
 /*# sourceMappingURL=main.css.map */
