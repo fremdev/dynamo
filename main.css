@@ -70,7 +70,7 @@ footer {
   Photo Styles
 ==================================== */
 .club {
-  height: 200px;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain; }
 
@@ -93,10 +93,12 @@ footer {
 
 .announce {
   display: flex;
-  min-height: 30vh;
-  flex-wrap: wrap; }
+  flex-direction: column; }
 
-.club {
-  flex: 100%; }
+.announce > div {
+  flex: 1 200px; }
+
+body > * {
+  flex: 1; }
 
 /*# sourceMappingURL=main.css.map */

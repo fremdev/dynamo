@@ -29,18 +29,22 @@ footer {
 /* ================================= 
   Photo Styles
 ==================================== */
+
 .club {
-	height: 200px;
-	// max-width: 30%;
+	// height: 250px;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
 .dynamo {
 	background-image: url("images/dynamo.png");
 }
+
 .mancity {
 	background-image: url("images/mc.png");
 }
+
 /* ================================= 
   Flexbox Styles
 ==================================== */
@@ -57,12 +61,16 @@ footer {
 
 .announce {
 	display: flex;
-	min-height: 30vh;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
-.club {
-	flex: 100%;
+.announce > div {
+	flex: 1 200px;;
 }
+
+body > * {
+	flex: 1;
+}
+
 // header,
 // nav {
 // 	display: flex;
