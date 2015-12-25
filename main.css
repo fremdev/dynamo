@@ -69,10 +69,14 @@ footer {
 /* ================================= 
   Photo Styles
 ==================================== */
-.club {
+.club,
+.banner {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain; }
+
+.club {
+  max-height: 200px; }
 
 .dynamo {
   background-image: url("images/dynamo.png"); }
@@ -81,7 +85,9 @@ footer {
   background-image: url("images/mc.png"); }
 
 .banner {
-  background-image: url("images/nsk.jpg"); }
+  background-image: url("images/nsk.jpg");
+  max-height: 200px;
+  background-size: cover; }
 
 /* ================================= 
   Flexbox Styles
@@ -106,7 +112,14 @@ footer {
 .club {
   flex: 2 150px; }
 
+.banner {
+  flex: 2 400px;
+  order: 1; }
+
 .match-info {
   flex: 0; }
+
+footer {
+  order: 100; }
 
 /*# sourceMappingURL=main.css.map */

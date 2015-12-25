@@ -30,11 +30,15 @@ footer {
   Photo Styles
 ==================================== */
 
-.club {
-	// height: 250px;
+.club, 
+.banner {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.club {
+	max-height: 200px;
 }
 
 .dynamo {
@@ -47,6 +51,8 @@ footer {
 
 .banner {
 	background-image: url("images/nsk.jpg");
+	max-height: 200px;
+	background-size: cover;
 }
 
 /* ================================= 
@@ -82,8 +88,17 @@ footer {
 	flex: 2 150px;
 }
 
+.banner {
+	flex: 2 400px;
+	order: 1;
+}
+
 .match-info {
 	flex: 0;
+}
+
+footer {
+	order: 100;
 }
 
 
