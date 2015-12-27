@@ -154,4 +154,9 @@ footer {
   display: flex;
   justify-content: space-around; }
 
+.dynamo-info,
+.mancity-info {
+  display: none;
+  flex: 0; }
+
 /*# sourceMappingURL=main.css.map */

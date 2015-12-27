@@ -141,7 +141,11 @@ footer {
 	justify-content: space-around;
 }
 
-
+.dynamo-info,
+.mancity-info {
+	display: none;
+	flex: 0;
+}
 
 
 
