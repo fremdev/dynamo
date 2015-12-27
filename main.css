@@ -46,7 +46,8 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #C5CAE9; }
+  background: #C5CAE9;
+  font-size: 16px; }
 
 a {
   text-decoration: none; }
@@ -85,14 +86,15 @@ nav li {
 /* ================================= 
   Photo Styles
 ==================================== */
-.club,
+.club-logo,
 .banner {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain; }
 
-.club {
+.club-logo {
   min-width: 100px;
+  min-height: 200px;
   max-height: 250px; }
 
 .dynamo {
@@ -130,8 +132,11 @@ footer {
 
 .club {
   flex: 2;
-  min-width: 75px;
+  min-width: 100px;
   min-height: 200px; }
+  .club h2 {
+    text-align: center;
+    font-size: 1.5em; }
 
 .versus {
   flex: 1;
@@ -145,6 +150,8 @@ footer {
   order: 1; }
 
 .match-info {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */
