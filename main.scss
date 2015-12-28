@@ -1,6 +1,11 @@
 @import "_reset.scss";
 @import "_variables.scss";
 
+@mixin block-style {
+    border: 1px solid black;
+    background: $block-color;
+}
+
 body {
     background: $primary-color;
     font-size: 16px;;
@@ -109,6 +114,7 @@ footer {
 .announce {
     display: flex;
     flex: 0;
+    padding-top: 10px;
 }
 
 .club {
@@ -135,9 +141,11 @@ footer {
 }
 
 .match-info {
-    flex: 1;
+    flex: 0;
     display: flex;
     justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
 }
 
 .dynamo-info,
@@ -146,16 +154,26 @@ footer {
     flex: 0;
 }
 
+// Block for full height of the page
+.placeholder {
+    flex: 1;
+}
+
+
 /* ================================= 
   Tables with Club's info Styles
 ==================================== */
 .dynamo-info {
-    display: block;
+    // display: block;
 }
+
+.club-info,
+.match-info {
+    @include block-style;
+}
+
 .club-info {
-    border: 1px solid black;
     margin: 15px auto;
-    background: #B3E5FC;
     td {
         padding: 5px 10px 0;
     }
@@ -176,7 +194,7 @@ footer {
     tr {
         color: white;
         &:hover {
-            color: #FF4081;
+            color: $accent-color;
         }
     }   
     tr:nth-child(even) {

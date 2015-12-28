@@ -128,7 +128,8 @@ footer {
 
 .announce {
   display: flex;
-  flex: 0; }
+  flex: 0;
+  padding-top: 10px; }
 
 .club {
   flex: 2;
@@ -150,25 +151,30 @@ footer {
   order: 1; }
 
 .match-info {
-  flex: 1;
+  flex: 0;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px; }
 
 .dynamo-info,
 .mancity-info {
   display: none;
   flex: 0; }
 
+.placeholder {
+  flex: 1; }
+
 /* ================================= 
   Tables with Club's info Styles
 ==================================== */
-.dynamo-info {
-  display: block; }
+.club-info,
+.match-info {
+  border: 1px solid black;
+  background: #B3E5FC; }
 
 .club-info {
-  border: 1px solid black;
-  margin: 15px auto;
-  background: #B3E5FC; }
+  margin: 15px auto; }
   .club-info td {
     padding: 5px 10px 0; }
   .club-info th {
