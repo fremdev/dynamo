@@ -1,9 +1,12 @@
-$(".club").click(function() {
-  // $(this).hide();
-  if ($(this).children().hasClass("dynamo")) {
-    $(".dynamo-info").show();
-  }
-  else {
-    $(".mancity-info").show();
-  }
+$mancityInfo = $(".mancity-info");
+$dynamoInfo = $(".dynamo-info");
+
+$(".club").first().on("click", function() {
+  $mancityInfo.slideUp();
+  $dynamoInfo.slideToggle();
+});
+
+$(".club").eq(1).on("click", function() {
+  $dynamoInfo.slideUp();
+  $mancityInfo.slideToggle();
 });
