@@ -129,7 +129,8 @@ footer {
 .announce {
   display: flex;
   flex: 0;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-bottom: 20px; }
 
 .club {
   flex: 2;
@@ -154,7 +155,7 @@ footer {
   flex: 0;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin-bottom: 20px;
   padding: 10px; }
 
 .dynamo-info,
@@ -168,13 +169,18 @@ footer {
 /* ================================= 
   Tables with Club's info Styles
 ==================================== */
+.dynamo-info {
+  display: block; }
+
 .club-info,
-.match-info {
+.match-info,
+.head-to-head {
   border: 1px solid black;
-  background: #B3E5FC; }
+  background: #B3E5FC;
+  min-width: 240px; }
 
 .club-info {
-  margin: 15px auto; }
+  margin: 0 auto 20px; }
   .club-info td {
     padding: 5px 10px 0; }
   .club-info th {
@@ -182,7 +188,7 @@ footer {
     padding-left: 10px;
     font-weight: bold;
     color: #303F9F; }
-  .club-info caption {
+  .club-info > caption {
     font-size: 1.125em;
     padding-bottom: 5px; }
 
@@ -196,8 +202,31 @@ footer {
   .group-stage tr:nth-child(even) {
     background: #0288D1; }
   .group-stage td {
-    padding-right: 5px; }
+    padding: 7px; }
     .group-stage td:last-child {
       text-align: right; }
+
+/* ================================= 
+  Content Blocks Styles
+==================================== */
+.head-to-head {
+  margin-bottom: 20px;
+  padding: 10px; }
+  .head-to-head table {
+    background: #0288D1;
+    color: #fff;
+    margin: 10px auto 0; }
+    .head-to-head table td {
+      padding: 5px; }
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media screen and (min-width: 400px) {
+  .head-to-head,
+  .match-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=main.css.map */

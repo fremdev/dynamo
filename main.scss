@@ -4,6 +4,7 @@
 @mixin block-style {
     border: 1px solid black;
     background: $block-color;
+    min-width: 240px;
 }
 
 body {
@@ -115,6 +116,7 @@ footer {
     display: flex;
     flex: 0;
     padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .club {
@@ -144,7 +146,7 @@ footer {
     flex: 0;
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -164,16 +166,17 @@ footer {
   Tables with Club's info Styles
 ==================================== */
 .dynamo-info {
-    // display: block;
+    display: block;
 }
 
 .club-info,
-.match-info {
+.match-info,
+.head-to-head {
     @include block-style;
 }
 
 .club-info {
-    margin: 15px auto;
+    margin: 0 auto 20px;
     td {
         padding: 5px 10px 0;
     }
@@ -183,14 +186,14 @@ footer {
         font-weight: bold;
         color: $logo-color;
     }
-    caption {
+    &>caption {
         font-size: 1.125em;
         padding-bottom: 5px;
     }
 }
 .group-stage {
     margin: 10px auto;
-    background: #03A9F4;
+    background: $table-color;
     tr {
         color: white;
         &:hover {
@@ -198,13 +201,44 @@ footer {
         }
     }   
     tr:nth-child(even) {
-        background: #0288D1;
+        background: $table-rows-color;
     }
     td {
-        padding-right: 5px;
+        padding: 7px;
         &:last-child {
             text-align: right;
         }
+    }
+}
+
+/* ================================= 
+  Content Blocks Styles
+==================================== */
+
+.head-to-head {
+    margin-bottom: 20px;
+    padding: 10px;
+
+    table {
+        background: $table-rows-color;
+        color: #fff;
+        margin: 10px auto 0;
+        td {
+            padding: 5px;
+        }
+    }
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 400px) {
+    .head-to-head,
+    .match-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 // header,
