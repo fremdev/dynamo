@@ -2,50 +2,50 @@
 @import "_variables.scss";
 
 body {
-	background: $primary-color;
-	font-size: 16px;;
+    background: $primary-color;
+    font-size: 16px;;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 footer {
-	background: $footer-color;
-	padding: 1em 0;
-	text-align: center;
-	color: $footer-text-color;
+    background: $footer-color;
+    padding: 1em 0;
+    text-align: center;
+    color: $footer-text-color;
 }
 
 /* ================================= 
   Navigations Styles
 ==================================== */
 header {
-	background: $header-color;
+    background: $header-color;
 }
 
 h1 {
-	font-size: 1.75em;
-	margin: 0;
-	background: $logo-color;
-	a {
-		color: $menu-color;
-	}
+    font-size: 1.75em;
+    margin: 0;
+    background: $logo-color;
+    a {
+        color: $menu-color;
+    }
 }
 
 nav li {
-	list-style: none;
-	a {
-		font-size: 1.125em;
-		padding: 0.25em 1em;
-		color: $menu-color;
-	}
+    list-style: none;
+    a {
+        font-size: 1.125em;
+        padding: 0.25em 1em;
+        color: $menu-color;
+    }
 }
 
 .main-nav a,
 .logo a {
-	display: block;
-	text-align: center;
+    display: block;
+    text-align: center;
 }
 
 /* ================================= 
@@ -54,29 +54,29 @@ nav li {
 
 .club-logo, 
 .banner {
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .club-logo {
-	min-width: 100px; 
-	min-height: 200px;
-	max-height: 250px;
+    min-width: 100px; 
+    min-height: 200px;
+    max-height: 250px;
 }
 
 .dynamo {
-	background-image: url("images/dynamo.png");
+    background-image: url("images/dynamo.png");
 }
 
 .mancity {
-	background-image: url("images/mc.png");
+    background-image: url("images/mc.png");
 }
 
 .banner {
-	background-image: url("images/nsk.jpg");
-	max-height: 200px;
-	background-size: cover;
+    background-image: url("images/nsk.jpg");
+    max-height: 200px;
+    background-size: cover;
 }
 
 /* ================================= 
@@ -86,76 +86,116 @@ nav li {
 // Main flexbox container
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body > * {
-	flex: 1;
+    flex: 1;
 }
 
 header,
 footer {
-	flex: 0;
+    flex: 0;
 }
 
 footer {
-	order: 100;
+    order: 100;
 }
 
 // Announce flexbox container
 
 .announce {
-	display: flex;
-	// flex-direction: column;
-	flex: 0;
+    display: flex;
+    flex: 0;
 }
 
 .club {
-	flex: 2;
-	min-width: 100px;
-	min-height: 200px;
-	h2 {
-		text-align: center;
-		font-size: 1.5em;
-	}
+    flex: 2;
+    min-width: 100px;
+    min-height: 200px;
+    h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
 
 .versus {
-	flex: 1;
-	min-width: 50px;
-	align-self: center;
-	font-size: 3em;
-	text-align: center;
+    flex: 1;
+    min-width: 50px;
+    align-self: center;
+    font-size: 3em;
+    text-align: center;
 }
 
 .banner {
-	flex: 2 400px;
-	order: 1;
+    flex: 2 400px;
+    order: 1;
 }
 
 .match-info {
-	flex: 1;
-	display: flex;
-	justify-content: space-around;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
 }
 
 .dynamo-info,
 .mancity-info {
-	display: none;
-	flex: 0;
+    display: none;
+    flex: 0;
 }
 
-
-
+/* ================================= 
+  Tables with Club's info Styles
+==================================== */
+.dynamo-info {
+    display: block;
+}
+.club-info {
+    border: 1px solid black;
+    margin: 15px auto;
+    background: #B3E5FC;
+    td {
+        padding: 5px 10px 0;
+    }
+    th {
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+        color: $logo-color;
+    }
+    caption {
+        font-size: 1.125em;
+        padding-bottom: 5px;
+    }
+}
+.group-stage {
+    margin: 10px auto;
+    background: #03A9F4;
+    tr {
+        color: white;
+        &:hover {
+            color: #FF4081;
+        }
+    }   
+    tr:nth-child(even) {
+        background: #0288D1;
+    }
+    td {
+        padding-right: 5px;
+        &:last-child {
+            text-align: right;
+        }
+    }
+}
 // header,
 // nav {
-// 	display: flex;
+//  display: flex;
 // }
 
 // header {
-// 	justify-content: space-between;
+//  justify-content: space-between;
 // }
 
 
