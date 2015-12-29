@@ -47,7 +47,8 @@ table {
 
 body {
   background: #C5CAE9;
-  font-size: 16px; }
+  font-size: 16px;
+  min-width: 250px; }
 
 a {
   text-decoration: none; }
@@ -133,6 +134,7 @@ footer {
   margin-bottom: 20px; }
 
 .club {
+  cursor: pointer;
   flex: 2;
   min-width: 100px;
   min-height: 200px; }
@@ -176,8 +178,7 @@ footer {
 .match-info,
 .head-to-head {
   border: 1px solid black;
-  background: #B3E5FC;
-  min-width: 240px; }
+  background: #B3E5FC; }
 
 .club-info {
   margin: 0 auto 20px; }
@@ -216,6 +217,8 @@ footer {
     background: #0288D1;
     color: #fff;
     margin: 10px auto 0; }
+    .head-to-head table tr:first-child {
+      border-bottom: 1px solid white; }
     .head-to-head table td {
       padding: 5px; }
 
@@ -227,6 +230,7 @@ footer {
   .match-info {
     width: 90%;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto;
+    flex: 0; } }
 
 /*# sourceMappingURL=main.css.map */

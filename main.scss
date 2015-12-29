@@ -4,12 +4,12 @@
 @mixin block-style {
     border: 1px solid black;
     background: $block-color;
-    min-width: 240px;
 }
 
 body {
     background: $primary-color;
-    font-size: 16px;;
+    font-size: 16px;
+    min-width: 250px;
 }
 
 a {
@@ -120,6 +120,7 @@ footer {
 }
 
 .club {
+    cursor: pointer;
     flex: 2;
     min-width: 100px;
     min-height: 200px;
@@ -223,6 +224,9 @@ footer {
         background: $table-rows-color;
         color: #fff;
         margin: 10px auto 0;
+        tr:first-child {
+            border-bottom: 1px solid white;
+        }
         td {
             padding: 5px;
         }
@@ -239,6 +243,7 @@ footer {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        flex: 0;
     }
 }
 // header,
