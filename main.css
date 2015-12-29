@@ -223,6 +223,14 @@ footer {
       padding: 5px; }
 
 /* ================================= 
+  Footer
+==================================== */
+.icon {
+  width: 36px; }
+  .icon:hover {
+    transform: scale(1.5); }
+
+/* ================================= 
   Media Queries
 ==================================== */
 @media screen and (min-width: 400px) {
