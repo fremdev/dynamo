@@ -63,6 +63,15 @@ footer {
   color: #B6B6B6; }
 
 /* ================================= 
+  Block Heading Style
+==================================== */
+.block-header {
+  font-size: 1.25em;
+  color: white;
+  background: #3F51B5;
+  padding: 10px; }
+
+/* ================================= 
   Navigations Styles
 ==================================== */
 header {
@@ -151,12 +160,14 @@ footer {
   font-size: 3em;
   text-align: center; }
 
-.banner {
+.slider {
   flex: 0;
   order: 1; }
 
+.match-info-block {
+  flex: 0; }
+
 .match-info {
-  flex: 0;
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
@@ -192,8 +203,10 @@ footer {
     font-weight: bold;
     color: #303F9F; }
   .club-info > caption {
-    font-size: 1.125em;
-    padding-bottom: 5px; }
+    font-size: 1.25em;
+    color: white;
+    background: #3F51B5;
+    padding: 10px; }
 
 .group-stage {
   margin: 10px auto;
@@ -258,12 +271,18 @@ footer {
   Media Queries
 ==================================== */
 @media screen and (min-width: 400px) {
-  .head-to-head,
-  .match-info,
-  .banner {
+  .head-to-head-block,
+  .match-info-block,
+  .slider {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    flex: 0; } }
+    flex: 0; }
+
+  .dynamo-info,
+  .mancity-info {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,6 +6,13 @@
     background: $block-color;
 }
 
+@mixin header-block-style {
+    font-size: 1.25em;
+    color: white;
+    background: $header-color;
+    padding: 10px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -25,6 +32,14 @@ footer {
     padding: 1em 0;
     text-align: center;
     color: $footer-text-color;
+}
+
+/* ================================= 
+  Block Heading Style
+==================================== */
+
+.block-header {
+    @include header-block-style;
 }
 
 /* ================================= 
@@ -141,13 +156,16 @@ footer {
     text-align: center;
 }
 
-.banner {
+.slider {
     flex: 0;
     order: 1;
 }
 
-.match-info {
+.match-info-block {
     flex: 0;
+}
+
+.match-info {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
@@ -191,8 +209,7 @@ footer {
         color: $logo-color;
     }
     &>caption {
-        font-size: 1.125em;
-        padding-bottom: 5px;
+        @include header-block-style;
     }
 }
 .group-stage {
@@ -282,13 +299,19 @@ footer {
 ==================================== */
 
 @media screen and (min-width: 400px) {
-    .head-to-head,
-    .match-info,
-    .banner {
+    .head-to-head-block,
+    .match-info-block,
+    .slider {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         flex: 0;
+    }
+    .dynamo-info,
+    .mancity-info {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 // header,
