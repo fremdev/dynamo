@@ -6,6 +6,10 @@
     background: $block-color;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: $primary-color;
     font-size: 16px;
@@ -81,7 +85,6 @@ nav li {
 
 .banner {
     background-image: url("images/nsk.jpg");
-    max-height: 200px;
     background-size: cover;
 }
 
@@ -139,7 +142,7 @@ footer {
 }
 
 .banner {
-    flex: 2 400px;
+    flex: 0;
     order: 1;
 }
 
@@ -247,13 +250,32 @@ footer {
 /* ================================= 
   Slider
 ==================================== */
-.banner {
-    text-align: center;
+
+.person {  
+    background-color: $person-color;
+    margin: 10px;
+    padding: 10px;
 }
+
+.person-info {
+    float: left;
+    width: 100%;
+ 
+    h3 {
+        text-align: center;
+        font-size: 1.125em;
+    }
+    p.person-role {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
 .person-photo {
     height: 150px;
-    margin: 10px auto 0;
+    margin:  0 auto 5px; 
 }
+
 
 /* ================================= 
   Media Queries
@@ -261,7 +283,8 @@ footer {
 
 @media screen and (min-width: 400px) {
     .head-to-head,
-    .match-info {
+    .match-info,
+    .banner {
         width: 90%;
         margin-left: auto;
         margin-right: auto;

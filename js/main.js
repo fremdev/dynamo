@@ -3,7 +3,8 @@ $dynamoInfo = $(".dynamo-info");
 $club = $(".club");
 
 $(".banner").slick({
-  dots:true
+  dots:true,
+  arrows: false
 });
 
 $club.first().on("click", function() {

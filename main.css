@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: #C5CAE9;
   font-size: 16px;
@@ -106,7 +109,6 @@ nav li {
 
 .banner {
   background-image: url("images/nsk.jpg");
-  max-height: 200px;
   background-size: cover; }
 
 /* ================================= 
@@ -150,7 +152,7 @@ footer {
   text-align: center; }
 
 .banner {
-  flex: 2 400px;
+  flex: 0;
   order: 1; }
 
 .match-info {
@@ -233,19 +235,32 @@ footer {
 /* ================================= 
   Slider
 ==================================== */
-.banner {
-  text-align: center; }
+.person {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 10px;
+  padding: 10px; }
+
+.person-info {
+  float: left;
+  width: 100%; }
+  .person-info h3 {
+    text-align: center;
+    font-size: 1.125em; }
+  .person-info p.person-role {
+    text-align: center;
+    padding-bottom: 10px; }
 
 .person-photo {
   height: 150px;
-  margin: 10px auto 0; }
+  margin: 0 auto 5px; }
 
 /* ================================= 
   Media Queries
 ==================================== */
 @media screen and (min-width: 400px) {
   .head-to-head,
-  .match-info {
+  .match-info,
+  .banner {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
