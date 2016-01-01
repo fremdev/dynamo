@@ -2,6 +2,10 @@ $mancityInfo = $(".mancity-info");
 $dynamoInfo = $(".dynamo-info");
 $club = $(".club");
 
+$(".banner").slick({
+  dots:true
+});
+
 $club.first().on("click", function() {
   $mancityInfo.slideUp();
   $dynamoInfo.slideToggle();
