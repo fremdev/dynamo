@@ -253,16 +253,6 @@ footer {
     }
 }
 
-/* ================================= 
-  Footer
-==================================== */
-
-.icon {
-    width: 36px;
-    &:hover {
-        transform: scale(1.5);
-    }
-}
 
 /* ================================= 
   Slider
@@ -289,10 +279,32 @@ footer {
 }
 
 .person-photo {
-    height: 150px;
+    width: 100%;
+    max-width: 500px;
     margin:  0 auto 5px; 
 }
 
+/* ================================= 
+  Footer
+==================================== */
+
+.icon {
+    width: 36px;
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+/* ================================= 
+  Social buttons
+==================================== */
+
+.share {
+    .ya-share2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 /* ================================= 
   Media Queries
