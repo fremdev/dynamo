@@ -242,7 +242,7 @@ footer {
 ==================================== */
 .person {
   background-color: rgba(255, 255, 255, 0.6);
-  margin: 10px;
+  margin: 10px 10px 30px;
   padding: 10px; }
 
 .person-info {
@@ -259,6 +259,17 @@ footer {
   width: 100%;
   max-width: 500px;
   margin: 0 auto 5px; }
+
+/* slick styles */
+.slick-dots {
+  bottom: 5px; }
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: white; }
+
+.slick-dots li.slick-active button:before {
+  color: white; }
 
 /* ================================= 
   Footer
