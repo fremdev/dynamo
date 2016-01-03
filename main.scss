@@ -193,7 +193,8 @@ footer {
 
 .club-info,
 .match-info,
-.head-to-head {
+.head-to-head,
+.countdown-block {
     @include block-style;
 }
 
@@ -341,6 +342,43 @@ footer {
 }
 
 /* ================================= 
+  Clock
+==================================== */
+
+.countdown-block {
+    margin-bottom: 20px;
+}
+
+#clockdiv {
+  padding-top: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: $table-color;
+  display: inline-block;
+  margin-bottom:10px;
+}
+
+#clockdiv div > span {
+  padding: 10px;
+  border-radius: 3px;
+  background: $table-rows-color;
+  display: inline-block;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* ================================= 
   Media Queries
 ==================================== */
 
@@ -348,7 +386,8 @@ footer {
     .head-to-head-block,
     .match-info-block,
     .slider,
-    .old-match {
+    .old-match,
+    .countdown-block {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
