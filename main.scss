@@ -318,13 +318,37 @@ footer {
 }
 
 /* ================================= 
+  Video
+==================================== */
+.old-match {
+    margin-bottom: 20px;
+    max-width: 800px;
+    flex: 0;
+}
+.video-wrapper {
+        position: relative;
+        padding-bottom: 75%; /* 4:3 */
+        padding-top: 25px;
+        height: 0;
+}
+
+.video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+/* ================================= 
   Media Queries
 ==================================== */
 
 @media screen and (min-width: 400px) {
     .head-to-head-block,
     .match-info-block,
-    .slider {
+    .slider,
+    .old-match {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
