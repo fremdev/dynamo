@@ -313,7 +313,8 @@ footer {
   Clock
 ==================================== */
 .countdown-block {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  max-width: 550px; }
 
 #clockdiv {
   padding-top: 10px;
